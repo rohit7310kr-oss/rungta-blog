@@ -1,0 +1,190 @@
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #4e73df, #6f42c1);
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   LEFT SIDE (Laptop View)
+========================= */
+.leftPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  color: #fff;
+}
+
+.brandBox {
+  max-width: 450px;
+}
+
+.brandTitle {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.brandText {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* =========================
+   RIGHT SIDE (FORM AREA)
+========================= */
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 45px 35px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+/* =========================
+   FORM
+========================= */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.input,
+.select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #4e73df;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(78, 115, 223, 0.15);
+}
+
+/* =========================
+   OPTIONS ROW
+========================= */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.button {
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+  background: #4e73df;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: #2e59d9;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   LINKS
+========================= */
+.link {
+  color: #4e73df;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* =========================
+   RESPONSIVE (Mobile)
+========================= */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftPanel {
+    display: none; /* Hide branding on small screens */
+  }
+
+  .rightPanel {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 35px 25px;
+  }
+}

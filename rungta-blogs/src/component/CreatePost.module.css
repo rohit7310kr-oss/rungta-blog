@@ -1,0 +1,167 @@
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fb;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #2e59d9;
+  color: white;
+  padding: 30px 20px;
+}
+
+.logo {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #333;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Inputs */
+.input,
+.select,
+.textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.textarea {
+  resize: none;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #4e73df;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(78, 115, 223, 0.15);
+}
+
+/* File Input */
+.fileInput {
+  font-size: 14px;
+}
+
+/* Buttons */
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.draftButton {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f8f9fc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.draftButton:hover {
+  background: #e2e6f5;
+}
+
+.publishButton {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #4e73df;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.publishButton:hover {
+  background: #2e59d9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
